@@ -1,7 +1,23 @@
 const path = require('path');
 const fs = require('fs');
-const solvc = require('solc');
+const solc = require('solc');
 
 const inboxPath = path.resolve(__dirname,'contracts','EVM.sol');
-const Source = fs.readFileSync(inboxPath,'uft8');
-console.log(solvc.compile(Source,1));
+const Source = fs.readFileSync(inboxPath,'utf8');
+const input = {
+    language: 'Solidity',
+    sources: {
+      'EVM.sol': {
+        content: Source,
+      },
+    },
+    settings: {
+      outputSelection: {
+        '*': {
+          '*': ['*'],
+        },
+      },
+    },
+  };
+const output = JSON.parse(solc.compile(JSON.stringify(input)));
+console.log(output);

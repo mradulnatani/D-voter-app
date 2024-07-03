@@ -10,6 +10,6 @@
   "description": "",
   "dependencies": {
     "node-modules": "^1.0.1",
-    "solc": "^0.4.17"
+    "solc": "^0.8.26"
   }
 }
