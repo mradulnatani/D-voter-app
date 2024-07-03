@@ -9,6 +9,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "ganache": "^7.9.2",
+    "mocha": "^10.6.0",
     "node-modules": "^1.0.1",
     "solc": "^0.8.26"
   }
