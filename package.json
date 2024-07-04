@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "compile.js": "^1.1.4",
     "ganache": "^7.9.2",
     "mocha": "^10.6.0",
     "node-modules": "^1.0.1",
