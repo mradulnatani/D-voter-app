@@ -54,7 +54,7 @@ This project aims to create a secure and transparent voting platform using block
 
 ## Smart Contract Details
 
-- `Voting.sol`: Contains the voting logic.
+- `EVM.sol`: Contains the voting logic.
 - Define candidates, manage votes, and emit events.
 
 ## Contributing
